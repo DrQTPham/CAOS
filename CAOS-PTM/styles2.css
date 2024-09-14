@@ -1,0 +1,147 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background: url('varian.jpg')
+        no-repeat center center fixed;
+    background-size: cover;
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Quicksand";
+}
+input {
+    outline: none;
+    border: none;
+}
+.container {
+    backdrop-filter: blur(5px); 
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40rem;
+    height: 40rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.header {
+    color: #f40c55;
+    text-align: center;
+}
+.header__icon i {
+    font-size: 7rem;
+}
+.header__title {
+    font-size: 2rem;
+}
+.form {
+    width: 100%;
+}
+.form > div {
+    height: 5rem;
+    margin: 1.5rem 0;
+}
+.form__username,
+.form__password {
+    display: flex;
+}
+.form__icon {
+    font-size: 2rem;
+    background: #363b41;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__icon i {
+    color: #606468;
+}
+.form__input {
+    width: 100%;
+    position: relative;
+}
+.form__input > input {
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    font-size: 1.7rem;
+    color: #ed0bbc;
+    background-color: #3b4148;
+    transition: background-color 0.4s;
+}
+.form__input:hover > input {
+    background-color: #434a52;
+}
+
+.form__submit button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s;
+}
+.form__submit button i {
+    color: #6ca65d;
+    font-size: 3rem;
+    transition: all 0.4s;
+}
+.form__submit button:hover {
+    background-color: #6ca65d;
+    transition: all 0.4s;
+}
+.form__submit button:hover i {
+    color: #770c0c;
+    transition: all 0.4s;
+}
+
+#togglePassword {
+    position: absolute;
+    font-size: 2.5rem;
+    color: rgb(32, 189, 14);
+    top: 50%;
+    right: 1rem;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.message__error {
+    font-size: 1.5rem;
+    color: rgb(248, 61, 61);
+    margin: -1rem 1rem;
+}
+
+
+.loading {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items:center;
+    justify-content:center;
+    background: rgba(0, 0, 0, 0.479);
+}
+.loading img{
+    width: 7rem;
+}
+ .author{
+    position: absolute;
+    bottom: 100px;
+    right: 180px;
+    font-size: 18px;
+ }
+
+
